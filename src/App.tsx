@@ -22,4 +22,11 @@ const FontLoader: React.FC = () => (
   <style>{`
     @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
     :root{
-      --bg: 245 245 247; /* iOS system gray 6-
+      --bg: 245 245 247; /* iOS system gray 6-ish */
+      --card: 255 255 255;
+      --tint: 0 122 255; /* iOS blue */
+    }
+    html, body, #root { height: 100%; }
+    body { font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Inter, 'Helvetica Neue', Arial, sans-serif; background: rgb(var(--bg)); }
+  `}</style>
+);
